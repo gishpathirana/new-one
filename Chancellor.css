@@ -1,0 +1,152 @@
+
+  /* General Styling of Chancellor page*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer Columns of Chancellor page */
+.footer-column {
+    flex: 1 1 200px;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #cccccc;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-column ul li:hover a {
+    color: #fecd0a; /* Highlighted yellow text */
+}
+
+/* Social Icons of Chancellor page*/
+.social-icons a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fecd0a;
+}
+
+/* Gallery Styling of Chancellor page*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Newsletter Styling of Chancellor page */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    background: #ffffff;
+}
+
+form button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fecd0a; /* Yellow button */
+    color: #f3ebeb; /* Dark text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffffff;
+    color: #fecd0a;
+}
+
+/* Footer Bottom of Chancellor page*/
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e9e0e0;
+    padding-top: 10px;
+    color: #fdfbfb;
+}
+
+.footer-bottom a {
+    color: #fecd0a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effect: Highlight Background of Chancellor page*/
+.footer-column ul li:hover {
+    background: rgba(999, 223, 223, 0.888); /* Subtle highlight */
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.live-animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: #fefef9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-image {
+  max-width: 600px; /* Fixed maximum width */
+  width: 100%;
+  height: auto;
+  animation: bounce 2s infinite alternate; /* Bounce animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.description-container {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.9s ease;
+}
+
+.about-btn {
+  background-color: #ff6600;
+}
+
+.about-btn:hover {
+  background-color: #e05500;
+}
+
+.choose-btn {
+  background-color: #333;
+}
+
+.choose-btn:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+/* Mobile responsiveness */
+@media screen and (max-width: 498px) {
+  .live-animation {
+    flex-direction: column; /* Stack the image and text vertically on small screens */
+    padding: 20px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .image-container {
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .animated-image {
+    max-width: 100%; /* Make the image fully responsive */
+    height: auto;
+    width: 100%;
+    max-height: 400px; /* Set a max-height to prevent over-scaling on small screens */
+    animation: bounce 2s infinite alternate; /* Keep the bounce animation */
+  }
+
+  .description-container {
+    padding: 10px;
+    text-align: center; /* Center-align text for better mobile readability */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .intro-text {
+    font-size: 1rem; /* Reduce size for better readability */
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 0.9rem; /* Reduce paragraph font size */
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 15px;
+    align-items: center; /* Center-align the buttons */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons */
+    padding: 12px 20px; /* Larger padding for ease of tapping */
+    font-size: 1.1rem; /* Slightly larger font size for easier readability */
+  }
+
+  .about-btn {
+    background-color: #ff6600;
+  }
+
+  .about-btn:hover {
+    background-color: #e05500;
+  }
+
+  .choose-btn {
+    background-color: #333;
+  }
+
+  .choose-btn:hover {
+    background-color: #555;
+  }
+}
